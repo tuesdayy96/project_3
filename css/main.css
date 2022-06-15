@@ -7,11 +7,9 @@
 }
 html,body{ 
     height: 100%;
-    width: 100%;
 }
 body{
-    /* overflow-y: hidden; */
-    font-size: 5rem;
+    overflow-y: hidden;
 }
 ul,li,ol{
     list-style: none;
@@ -24,20 +22,60 @@ a{
     height:100%; 
     position:relative;
 }
-#wrap > .wrap_af {
-    content:""; 
-    position:fixed; 
-    display:block; 
-    width:100%;
-    height:100%; 
-    background:rgba(0,0,0,0.5); 
-    top:0; 
-    left:0;
-    z-index:20;
+/* 헤더 */
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(42,42,42,1);
 }
-
-/* 닷닷다삳삳삳삳 */
-
+header a{
+    color:#fff;
+}
+.head_inner{
+    position: relative;
+    max-width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head_inner .logo a{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 70px;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(42, 42, 42);
+}
+.head_inner .menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head_inner .menu li{
+    padding: 20px;
+}
+.head_inner .launcher{
+    width: 30%;
+    text-align: center;
+}
+.head_inner .launcher a{
+    padding: 20px;
+}
+footer{
+    height: 400px;
+}
+/* 풀페이지 관련 */
 #dot{
     width:80px; 
     height:250px;  
@@ -47,7 +85,7 @@ a{
     display:flex;
     top:50%;
     right:0px;
-    transform:translatey(-50%);
+    transform:translateY(-50%);
     z-index:100;
 }
 
@@ -74,7 +112,7 @@ a{
     height:100%; 
     outline:none; 
     border-radius:50%;
-    background-color:#fff; background:rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.5);
     cursor:pointer; position:absolute;
 }
 #dot ul .active{
@@ -92,15 +130,68 @@ a{
     height: 100%;
     position: relative;
 }
-.box{
+.box:not(:last-child){
     width: 100%;
     height: 100%;
     position: relative;
     margin: 0 auto;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 100vh;
 }
 .box:nth-child(even){
     background-color: red;
 }
 .box:nth-child(odd){
     background-color: blueviolet;
+}
+/* 풀페이지 속 슬라이드 */
+.p1{
+    /* overflow: hidden; */
+    width: 100%;
+}
+#boxwrap{
+    width: 300vw;
+    height: 100vh;
+    position: relative;
+}
+.p1 .bxb{
+    width: 100vw;
+    height: 100vh;
+    float: left;
+}
+
+/* 슬라이드 닷 */
+#dot2{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    width: 120px;
+    height: 30px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 60px;
+    z-index: 50;
+}
+#dot2 li{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    display: inline-block;
+    border-radius: 30px;
+    position: relative;
+}
+#dot2 li a{
+    transition:all 0.3s ease-in-out; 
+    width:100%; 
+    height:100%; 
+    outline:none; 
+    border-radius:50%;
+    cursor:pointer;
+    position: absolute;
+    z-index: 50;
+    top:0;
+    left: 0;
 }
