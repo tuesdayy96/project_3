@@ -208,6 +208,9 @@ footer{
         border-bottom-left-radius: 60px;
     }
 }
+#dot2:hover::after{
+    animation-play-state: paused;
+}
 #dot2 li{
     width: 15px;
     height: 15px;
