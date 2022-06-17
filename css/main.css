@@ -137,7 +137,6 @@ footer{
     height: 100%;
     position: relative;
     margin: 0 auto;
-    text-align: center;
 }
 .box:nth-child(even){
     background-color: red;
@@ -267,7 +266,7 @@ footer{
     background-color: rgb(42, 42, 42);
     position: absolute;
     right: 10%;
-    top:25vh;
+    bottom:10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -294,4 +293,131 @@ footer{
 }
 .item button:hover{
     opacity: 0.8;
+}
+/* 풀페이지2 */
+.p2{
+    position: relative;
+    /* background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+    background-image: url(../img/bg1.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.p2 h2{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+}
+.news{
+    width: 90%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(42,42,42,0.99);
+    text-align: left;
+    border-radius: 10px;
+}
+.news > button{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+}
+.news_main{
+    max-width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.news_main .main_item a{
+    display: block;
+    width: 400px;
+    margin: 15px 0;
+    color:#fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.news_main .main_item a:hover{
+    text-decoration: underline;
+}
+.main_item a img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    transition: all 0.5s ease;
+}
+.main_item a img:hover{
+    filter: none;
+    transform : scale(1.1) ;
+}
+.sub_box{
+    max-width: 100%;
+    margin: 20px 100px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #ddd;
+}
+.sub_box a{
+    overflow: hidden;
+    width: 200px;
+    color: #fff;
+    margin-right: 10px;
+    flex-shrink: 1;
+}
+.sub_box a:hover{
+    text-decoration: underline;
+}
+.sub_box span{
+    display: block;
+}
+.sub_box a img{
+    width: 200px;
+    height: auto;
+    filter: grayscale(50%);
+    transition: all 0.5s ease;
+    
+}
+.sub_box a img:hover{
+    filter: none;
+    transform: scale(1.1);
+}
+.news > button{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-color: rgb(0,116,228);
+    color:#fff;
+}
+.news > button:hover{
+    opacity: 0.8;
+}
+
+/* 풀페이지3 */
+.box.p3{
+    background-color: #000;
+    background-image: url(../img/sale.jpg);
+    position: relative;   
+}
+.p3 .sale{
+    width: 600px;
+    height: 800px;
+    position: relative;
+    top:10%;
+    left:5%;
+    background-color: #fff;
+
+}
+.p3 .sale .sale_wrap{
+    height: 90%;
+    background-color: aliceblue;
 }

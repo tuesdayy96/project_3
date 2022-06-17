@@ -9,7 +9,6 @@ function toSlide(){
     var auto = null;
     var dot2 = $('#dot2 > li');
     var boxwrap = $('#boxwrap');
-    var inslide = boxwrap.children('div');
 
     function init(){
         wid = $('.p1').width();
@@ -25,6 +24,7 @@ function toSlide(){
             slideMove();
         });
 
+        // 슬라이드 애니메이션 연동
         var showbar = document.querySelector('#dot2');
         showbar.addEventListener('animationiteration',autoSlide);
         // autoSlideStop();
@@ -34,9 +34,9 @@ function toSlide(){
 
         // 자동실행
         function autoSlide(){
-    
+             // auto = setInterval(function(){
                 nextScreen();
-    
+             // });
         }
         // 자동실행 중지
         function autoSlideStop(){
@@ -46,11 +46,11 @@ function toSlide(){
         }
         // 자동재생 재실행
         function re_autoSlide(){
-            dot2.mouseleave(function(){
-                auto = setInterval(function(){
+            // dot2.mouseleave(function(){
+                // auto = setInterval(function(){
                     nextScreen();
-                });
-            });
+                // });
+            // });
         }
 
         // 다음으로 넘기기
