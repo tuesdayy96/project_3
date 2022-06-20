@@ -121,3 +121,32 @@ $(function(){
     },6000);
 });
 
+    // 풀페이지3 타이머
+        var time = 3600*12;
+        var hour = '';
+        var min = '';
+        var sec = '';
+        var timer = document.getElementById('timer');
+        function setTimer(){
+            hour = parseInt(time/3600);
+            min = parseInt(time%3600/60);
+            sec = time%60;
+            var new_sec = String(sec).padStart(2,'0')
+            document.getElementById('timer').innerHTML = hour +' : '+ min +' : '+ new_sec;
+            time--;
+        }
+        setInterval(setTimer,1000);
+
+// 풀페이지4 출시예정 페이드인
+$(function(){
+    $('.coming_title li').mouseenter(function(){
+        var idx = $(this).index();
+        $('.title_inner').eq(idx).stop().fadeIn();
+        $('.title_inner').eq(idx).siblings().stop().fadeOut();
+    }).mouseleave(function(){
+        var idx = $(this).index();
+        $('.title_inner').eq(idx).stop().fadeIn();
+        $('.title_inner').eq(idx).siblings().stop().fadeOut();
+    })
+})
+       
