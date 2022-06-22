@@ -26,50 +26,6 @@ $(function(){
                 dot.eq(i).find("a").css({"background":"#0cdaff"});
             }
         }
-        // if(wScroll >= cnt.eq(0).offset().top){
-        //     dot.css({"background":"rgba(255,255,255,0.1)"});
-        //     dot.find("a").css({"background":"rgba(255,255,255,0.5)"});
-        //     dot.removeClass("active");
-        //     dot.eq(0).addClass("active");
-        //     dot.eq(0).find("a").css({"background":"#0cdaff"});
-        // }
-        // if(wScroll >= cnt.eq(1).offset().top){
-        //     dot.css({"background":"rgba(0,0,0,0.7)"});
-        //     dot.find("a").css({"background":"rgba(0,0,0,0.5)"});
-        //     dot.removeClass("active");
-        //     dot.eq(1).addClass("active");
-        //     dot.eq(1).find("a").css({"background":"#0189ff"});
-        // }
-        // if(wScroll >= cnt.eq(2).offset().top){
-        //     dot.removeClass("active");
-        //     dot.find("a").css({"background":"rgba(0,0,0,0.5)"});
-        //     dot.eq(2).addClass("active");
-        //     dot.eq(2).find("a").css({"background":"#f0a91b"});
-        // }
-        // if(wScroll >= cnt.eq(3).offset().top){
-        //     dot.removeClass("active");
-        //     dot.find("a").css({"background":"rgba(0,0,0,0.5)"});
-        //     dot.eq(3).addClass("active");
-        //     dot.eq(3).find("a").css({"background":"#fff"});
-        // }
-        // if(wScroll >= cnt.eq(4).offset().top){
-        //     dot.removeClass("active");
-        //     dot.find("a").css({"background":"rgba(0,0,0,0.5)"});
-        //     dot.eq(4).addClass("active");
-        //     dot.eq(4).find("a").css({"background":"#d6130f"});
-        // }
-        // if(wScroll >= cnt.eq(5).offset().top){
-        //     dot.removeClass("active");
-        //     dot.find("a").css({"background":"rgba(0,0,0,0.5)"});
-        //     dot.eq(5).addClass("active");
-        //     dot.eq(5).find("a").css({"background":"#a0ef08"});
-        // }
-        // if(wScroll >= cnt.eq(6).offset().top){
-        //     dot.removeClass("active");
-        //     dot.find("a").css({"background":"rgba(0,0,0,0.5)"});
-        //     dot.eq(6).addClass("active");
-        //     dot.eq(6).find("a").css({"background":"#9517ff"});       
-        // } 
     });
         return false;
 })
@@ -150,3 +106,22 @@ $(function(){
     })
 })
        
+// 풀페이지5 ~~ 푸터
+$(function(){
+    $('.logueinner li').click(function(){
+        $(this).stop().animate({width : '90%'},'slow');
+        $(this).siblings().stop().animate({width:'20%'},'slow');
+        $(this).addClass('close');
+        $(this).siblings().removeClass('close');
+    })
+
+
+    // 푸터
+    $('a.re_btn').eq(0).click(function(){
+        $('.container').eq(0).stop().slideToggle();
+    })
+    $('a.re_btn').eq(1).click(function(){
+        $('.container').eq(1).stop().slideToggle();
+    })
+
+})

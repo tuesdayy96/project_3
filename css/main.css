@@ -138,13 +138,6 @@ footer{
     position: relative;
     margin: 0 auto;
 }
-.box:nth-child(even){
-    background-color: red;
-}
-.box:nth-child(odd){
-    background-color: blueviolet;
-}
-
 /* 풀페이지 속 슬라이드 */
 .p1{
     overflow: hidden;
@@ -364,6 +357,7 @@ footer{
 .sub_box a{
     overflow: hidden;
     width: 200px;
+    min-width: 200px;
     color: #fff;
     margin-right: 10px;
     flex-shrink: 1;
@@ -371,15 +365,24 @@ footer{
 .sub_box a:hover{
     text-decoration: underline;
 }
+.sub_box p{
+    overflow: hidden;
+}
 .sub_box span{
     display: block;
+} 
+.sub_box span a{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .sub_box a img{
     width: 200px;
     height: auto;
     filter: grayscale(50%);
     transition: all 0.5s ease;
-    
 }
 .sub_box a img:hover{
     filter: none;
@@ -725,7 +728,7 @@ a.buybtn:hover::after{
     width: 25vw;
     height: 35vw;
     margin: 15px;
-    max-width: 650px;
+    max-width: 350px;
     max-height: 400px;
     perspective: 1000px;
 }
@@ -773,7 +776,7 @@ a.buybtn:hover::after{
 }
 a.play{
     padding: 10px;
-    border: 1px solid rgb(0,116,228);
+    border: 1px solid rgb(0,150,255);
     color: rgb(0,116,228);
     transition: all 0.4s ease;
     display: inline-block;
@@ -782,7 +785,7 @@ a.play{
     transition: all 0.3s;
 }
 a.play:hover{
-    box-shadow: 0 0 0 0 rgb(0,116,228),inset 140px 30px 0 0 rgb(0,116,228);
+    box-shadow: 0 0 0 0 rgb(0,150,255),inset 140px 100px 0 0 rgb(0,150,255);
     color:#fff;
 }
 
@@ -798,4 +801,131 @@ a.play:hover{
     height: 100%;
     border-top-right-radius:8px;
     border-top-left-radius:8px;
+}
+
+/* 풀페이지6 */
+.box.p6{
+    position: relative;
+    background-color: #111;
+    background-image: url(../img/cataloguebg.jpg);
+    background-position: center;
+    background-size:cover;
+}
+.box.p6 a{
+    color:#fff;
+}
+.catalogue{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 50%;
+    max-width: 1140px;
+    margin: 0 auto;
+    background: rgba(90,5,190,0.5);
+    background: linear-gradient(34deg, rgba(90,5,190,0.5) 8%, rgba(26,16,136,0.5) 19%, rgba(74,14,224,0.5) 71%, rgba(40,12,130,0.5) 87%, rgba(90,5,190,0.5) 100%);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.catalogue button{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border:none;
+}
+.loguebox{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.logueinner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.logueinner li{
+    height: 300px;
+    transform: skewX(-20deg);
+    /* transition: width 0.4s ease; */
+    box-shadow: 0 0 30px 3px #333;
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+.logueinner li:hover{
+    filter: none;
+}
+.logueinner li.close{
+    filter: none;
+}
+.logueinner li img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 푸터 */
+footer{
+    background-color: #111;  
+    color:#fff;
+    position: relative;
+    height: auto;
+}
+footer span{
+    color: #808080;
+}
+footer a{
+    color: #fff;
+}
+.foot_inner{
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    padding: 30px;
+}
+.sns{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.sns li{
+    margin: 0 10px;
+}
+.sns img{
+    width: 40px;
+    height: 40px;
+}
+.resource{
+    width: 100%;
+}
+a.re_btn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/down.png);
+    background-position: center;
+    background-size: contain;
+}
+.re_,.cre_{
+    display: none;
+}
+.re_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.re_list li{
+    margin: 15px;
+}
+.cre_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cre_list li{
+    margin: 15px;
 }
