@@ -9,6 +9,8 @@
     <script src="js/main.js"></script>
     <script src="js/slide2.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="icon" href="img/title.png">
 </head>
 <body>
@@ -30,17 +32,30 @@
                     <h1><a href="#"></a></h1>
                 </div>
                 <ul class="menu">
-                    <li><a href="">메뉴1</a></li>
-                    <li><a href="">메뉴2</a></li>
-                    <li><a href="">메뉴3</a></li>
-                    <li><a href="">메뉴4</a></li>
-                    <li><a href="">메뉴5</a></li>
+                    <li><a href="">스토어</a></li>
+                    <li><a href="">자주 묻는 질문</a></li>
+                    <li><a href="">지원센터</a></li>
+                    <li><a href="">언리얼 엔진</a></li>
+                    <li><a href=""></a></li>
                 </ul>
                 <div class="launcher">
-                    <a href="">런처 다운로드</a>
+                    <a id="downBtn" href="">런처 다운로드</a>
+                    <img id="showBtn" src="img/menu.png" alt="" onclick="showMenu()">
                 </div>
             </div>
         </header>
+            <div class="head_outer">
+                <a id="hideBtn" href="javascript:void(0)" onclick="hideMenu()">X</a>
+                <div class="hide_content">
+                    <a href="">스토어</a>
+                    <a href="">자주 묻는 질문</a>
+                    <a href="">지원센터</a>
+                    <a href="">언리얼 엔진</a>
+                </div>
+                <div class="hide_bottom">
+                    <span>런처 다운로드</span>
+                </div>
+            </div>
 
         <div id="pages">
 
@@ -261,6 +276,7 @@
                                 </ul>
                             </div>
                             <div class="side2 game_info">
+                                <button id="closeBtn"><span>닫기</span></button>
                                 <div class="title_info">
                                     <div class="title_inner info1 view">
                                         <iframe src="https://www.youtube.com/embed/QzEeHh4PMac" title="타이니 티나의 원더랜드 - 똬리를 튼 억류자 공개 트레일러" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -394,7 +410,7 @@
                                     <img src="img/riot1.webp" alt="">
                                     <h3>리그 오브 레전드</h3>
                                     <p>전설이 되어보세요. 나만의 챔피언으로 실력을 키워 5대5 전투에서 적을 제압하고 적 기지를 파괴하세요.</p>
-                                    <a href="" class="play">플레이 하러가기</a>
+                                    <a href="" class="play">PLAY</a>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +421,7 @@
                                     <img src="img/riot2.webp" alt="">
                                     <h3>누누의 노래</h3>
                                     <p>싱글 플레이 모험을 통해 실종된 엄마를 찾아나선 누누가 되어 프렐요드를 여행해 보세요. 누누의 가장 친한 친구 설인 윌럼프와 함께 얼어붙은 툰드라 깊숙이 숨겨진 비밀과 설화, 전설을 파헤치고 이야기 조각을 맞춰 보세요.</p>
-                                    <a href="" class="play">플레이 하러가기</a>
+                                    <a href="" class="play">PLAY</a>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +432,7 @@
                                     <img src="img/riot3.jpg" alt="">
                                     <h3>레전드 오브 룬테라</h3>
                                     <p>실력과 창의력이 모든 것을 결정하는 레전드 오브 룬테라는 리그 오브 레전드 세계관을 대표하는 챔피언과 아군이 등장하는 전략 카드 게임입니다.</p>
-                                    <a href="" class="play">플레이 하러가기</a>
+                                    <a href="" class="play">PLAY</a>
                                 </div>
                             </div>
                         </div>
@@ -427,7 +443,7 @@
                                     <img src="img/riot4.webp" alt="">
                                     <h3>시간교차</h3>
                                     <p>과거를 되돌려 새로운 미래를 만들다 - 스토리 기반 액션 플랫폼 게임 속 시간을 조종하는 기발한 장치를 가지고 있는 발명가 소년 에코가 되어 화려한 도시 자운을 탐험하세요.</p>
-                                    <a href="" class="play">플레이 하러가기</a>
+                                    <a href="" class="play">PLAY</a>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +454,7 @@
                                     <img src="img/riot5.webp" alt="">
                                     <h3>마법공학 아수라장</h3>
                                     <p>빠르게 진행되는 리듬 러너 게임 '마법공학 아수라장'에서는 모든 액션이 폭발 반응을 일으키고 아수라장은 아무리 많아도 부족합니다. 요들이자 마법공학 폭발물 전문가인 직스가 되어 필트오버에서 신나게 날뛰세요</p>
-                                    <a href="" class="play">플레이 하러가기</a>
+                                    <a href="" class="play">PLAY</a>
                                 </div>
                             </div>
                         </div>
@@ -449,7 +465,7 @@
                                     <img src="img/riot6.webp" alt="">
                                     <h3>발로란트</h3>
                                     <p>발로란트는 전 세계를 무대로 하는 5대5 캐릭터 기반 전략 슈팅 게임입니다. 전략적 스킬, 정밀한 플레이, 적응하는 팀워크를 바탕으로 경쟁 상대의 허점을 노려 빛나는 플레이를 펼치세요.</p>
-                                    <a href="" class="play">플레이 하러가기</a>
+                                    <a href="" class="play">PLAY</a>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +476,7 @@
                 <div class="catalogue">
                     <h2>카탈로그 둘러보기</h2>
                     <p>장르, 기능, 가격 등의 기준별로 다음에 플레이할 게임을 찾아보세요.</p>
-                    <button>자세히</button>
+                    <button id="logue"><span>자세히</span></button>
                     <div class="loguebox">
                         <ul class="logueinner">
                             <li><img src="img/catalogue1.webp" alt=""></li>
@@ -481,7 +497,7 @@
                     </ul>
                     <div class="epic_games">
                         <div class="resource">
-                            <span>리소스</span>
+                            <span class="re_btn">리소스</span>
                             <a href="javascript:void(0)" class="re_btn">&nbsp;</a>
                             <div class="re_ container">
                                 <ul class="re_list">
@@ -500,9 +516,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <br>
                         <div class="create">
-                            <span>에픽게임즈 제작</span>
-                            <a href="javascript:void(0)" class="re_btn">&nbsp;</a>
+                            <span class="re_btn2">에픽게임즈 제작</span>
+                            <a href="javascript:void(0)" class="re_btn2">&nbsp;</a>
                             <div class="cre_ container">
                                 <ul class="cre_list">
                                     <li><a href="">배틀 브레이커스</a></li>
@@ -514,14 +531,17 @@
                                 </ul>
                             </div>
                         </div>
+                        <br>
                     </div>
                     <hr>
                     <div class="copyright">
                         <p>© 2022, Epic Games, Inc. All Rights Reserved. Epic, Epic Games, Epic Games 로고, Fortnite, Fortnite 로고, Unreal, Unreal Engine, Unreal Engine 로고, Unreal Tournament, Unreal Tournament 로고의 모든 저작권은 Epic Games, Inc.에 있으며, 이는 미국 및 그 외 국가에 모두 해당됩니다. 기타 브랜드 또는 제품 이름은 해당 소유자의 상표입니다. 미국 외 거래는 Epic Games International, S.à r.l.을 통해 이뤄집니다.</p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a href="#"><img src="img/logo.png" width="32" height="32" alt=""></a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">개인정보 처리방침</a></li>
+                            <li><a href="">스토어 환불 정책</a></li>
+                            
                         </ul>
                     </div>
                 </div>

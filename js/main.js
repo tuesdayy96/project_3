@@ -1,4 +1,4 @@
-$(function(){
+$(function(){     
 
     // 인덱스 클릭 시 페이지이동
     var dot = $('#dot ul li');
@@ -28,10 +28,16 @@ $(function(){
         }
     });
         return false;
+
 })
 
-
-
+// 800px이하 메뉴 상호작용
+function showMenu(){
+    document.querySelector('.head_outer').style.width = '60%';
+}
+function hideMenu(){
+    document.querySelector('.head_outer').style.width = 0;
+}
 
 $(function(){
 
@@ -104,6 +110,20 @@ $(function(){
         $('.title_inner').eq(idx).stop().fadeIn();
         $('.title_inner').eq(idx).siblings().stop().fadeOut();
     })
+    $('.coming_title li').click(function(){
+        var idx = $(this).index();
+        $('.side2').stop().show();
+    })
+    $('#closeBtn').click(function(){
+        $('.side2').stop().hide();
+    })
+    $(window).resize(function(){
+        if(window.innerWidth > 800){
+            $('.side2').show();
+        } else {
+            $('.side2').hide();
+        }
+    })
 })
        
 // 풀페이지5 ~~ 푸터
@@ -117,10 +137,10 @@ $(function(){
 
 
     // 푸터
-    $('a.re_btn').eq(0).click(function(){
+    $('.re_btn').click(function(){
         $('.container').eq(0).stop().slideToggle();
     })
-    $('a.re_btn').eq(1).click(function(){
+    $('.re_btn2').click(function(){
         $('.container').eq(1).stop().slideToggle();
     })
 
