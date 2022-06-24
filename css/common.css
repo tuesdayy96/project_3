@@ -180,6 +180,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
+        font-size: 1.8vw;
     }
     .re_list li{
         margin: 15px;
@@ -189,6 +190,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
+        font-size: 1.8vw;
     }
     .cre_list li{
         margin: 15px;
