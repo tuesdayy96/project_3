@@ -47,16 +47,21 @@ $(function(){
          $(this).attr('data-index', win_h * index);
     });
 
+
+    if(window.matchMedia("(max-width: 500px)").matches){
+
+    }
     $('.box').on('mousewheel',function(e){
         var pageV = parseInt($(this).attr('data-index'));
         if(e.originalEvent.wheelDelta >= 0 ){
             $('html,body').stop().animate({scrollTop : pageV - win_h});
-            return false;
+                return false;
         } else if(e.originalEvent.wheelDelta < 0){
             $('html,body').stop().animate({scrollTop : pageV + win_h});
-            return false;
+                return false;
         }
     });
+  
     $(window).resize(function(){
         win_h = $(window).height();
     })
