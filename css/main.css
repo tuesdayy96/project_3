@@ -546,6 +546,7 @@
         left: 0;
         text-align: left;
         color:#fff;
+        width: 100%;
     }
     iframe{
         width: 100%;
@@ -580,7 +581,7 @@
         border-left: 1px solid #808080;
     }
 
-    .title_inner_item .buybtn{color:#fff;display: inline-block;position: relative;text-align: center;line-height: 50px;min-width: 150px;width: 200px;height: 50px;perspective: 12000px;}
+    .title_inner_item .buybtn{color:#fff;display: inline-block;position: relative;text-align: center;line-height: 50px;min-width: 150px;max-width:200px;height: 50px;perspective: 12000px;}
     a.buybtn::before, a.buybtn::after{content: attr(title);display: block;position: absolute;box-sizing: border-box;top:0;left: 0;width: 100%;height: 100%;text-align: center;line-height: 50px;}
     a.buybtn::before{background-color: rgb(226,63,225);transition: all 0.3s;}
     a.buybtn::after{border: 4px solid #fff;color: #fff; background-color: rgb(226,63,225);transform: rotateX(90deg) translateZ(50px);transform-origin: 50% 100%;line-height: 45px;transition: all 0.3s;}
@@ -701,7 +702,7 @@
     }
     a.play{
         padding: 2%;
-        width: auto;
+        width: 3em;
         border: 1px solid rgb(0,150,255);
         color: rgb(0,116,228);
         font-size: 5vw;
@@ -1425,11 +1426,11 @@
         align-items: center;
     }
     .flip_box{
-        width: 25vw;
-        height: 35vw;
+        width: 28%;
+        height: 40%;
         margin: 15px;
-        max-width: 350px;
-        max-height: 400px;
+        /* max-width: 330px;
+        max-height: 360px; */
         perspective: 1000px;
     }
     .flip_box::after{
@@ -1468,15 +1469,16 @@
         padding: 10px;
     }
     .flip_back h3{
-        font-size: 2vw;
+        font-size: 1.5vw;
         margin: 20px 0;
     }
     .flip_back p{
         margin: 20px 0;
-        font-size: 1.2vw;
+        font-size: 12px;
     }
     a.play{
-        width: 100px;
+        width: 8vw;
+        height: auto;
         padding: 10px;
         border: 1px solid rgb(0,150,255);
         color: rgb(0,116,228);
