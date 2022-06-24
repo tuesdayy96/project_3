@@ -57,6 +57,9 @@ $(function(){
             return false;
         }
     });
+    $(window).resize(function(){
+        win_h = $(window).height();
+    })
 
     // 풀페이지3 자동 캐러셀
     var i = 0;

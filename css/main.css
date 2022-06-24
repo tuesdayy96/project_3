@@ -408,7 +408,10 @@
 
     /* 풀페이지4 */
     .box.p4{
-        background-color: #111;
+        /* background-color: #111; */
+        background-image: url(../img/fullbg.jpg);
+        background-position: center;
+        background-size: cover;
         display: flex;
         align-items: center;
     }
@@ -421,7 +424,7 @@
         position: relative;
     }
     .soon h2{
-        box-shadow: 0 2px 4px 4px #000;
+        box-shadow: 0 2px 4px 1px #000;
         height: 80px;
         line-height: 80px;
         font-size: 2rem;
@@ -797,83 +800,6 @@
     .logueinner li img{
         width: 100%;
         height: 100%;
-    }
-
-    /* 푸터 */
-    footer{
-        background-color: #111;  
-        color:#fff;
-        position: relative;
-        height: auto;
-    }
-    footer span{
-        color: #808080;
-    }
-    footer a{
-        color: #fff;
-    }
-    .foot_inner{
-        width: 100%;
-        max-width: 1240px;
-        height: 100%;
-        padding: 30px;
-    }
-    .sns{
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 20px;
-    }
-    .sns li{
-        margin: 0 10px;
-    }
-    .sns img{
-        width: 40px;
-        height: 40px;
-    }
-    .resource{
-        width: 100%;
-    }
-    a.re_btn, a.re_btn2{
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-image: url(../img/down.png);
-        background-position: center;
-        background-size: contain;
-    }
-    .re_,.cre_{
-        display: none;
-    }
-    .re_list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .re_list li{
-        margin: 15px;
-    }
-    .cre_list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .cre_list li{
-        margin: 15px;
-    }
-    .copyright{
-        font-size: 12px;
-        padding: 15px;
-    }
-    .copyright ul{
-        display: flex;
-        padding: 0;
-    }
-    .copyright ul li{
-        padding: 0;
-        margin-top: 20px;
-        margin-right: 10px;
     }
 }
 /* ------------구분선--------------- */
@@ -1289,7 +1215,10 @@
 
     /* 풀페이지4 */
     .box.p4{
-        background-color: #111;
+        /* background-color: #111; */
+        background-image: url(../img/fullbg.jpg);
+        background-position: center;
+        background-size: cover;
         display: flex;
         align-items: center;
     }
@@ -1302,7 +1231,7 @@
         position: relative;
     }
     .soon h2{
-        box-shadow: 0 2px 4px 4px #000;
+        box-shadow: 0 2px 4px 1px #000;
         height: 80px;
         line-height: 80px;
         font-size: 2rem;
@@ -1646,83 +1575,6 @@
     .logueinner li img{
         width: 100%;
         height: 100%;
-    }
-
-    /* 푸터 */
-    footer{
-        background-color: #111;  
-        color:#fff;
-        position: relative;
-        height: auto;
-    }
-    footer span{
-        color: #808080;
-    }
-    footer a{
-        color: #fff;
-    }
-    .foot_inner{
-        width: 100%;
-        max-width: 1240px;
-        height: 100%;
-        padding: 30px;
-    }
-    .sns{
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 20px;
-    }
-    .sns li{
-        margin: 0 10px;
-    }
-    .sns img{
-        width: 40px;
-        height: 40px;
-    }
-    .resource{
-        width: 100%;
-    }
-    a.re_btn, a.re_btn2{
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-image: url(../img/down.png);
-        background-position: center;
-        background-size: contain;
-    }
-    .re_,.cre_{
-        display: none;
-    }
-    .re_list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .re_list li{
-        margin: 15px;
-    }
-    .cre_list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .cre_list li{
-        margin: 15px;
-    }
-    .copyright{
-        font-size: 12px;
-        padding: 15px;
-    }
-    .copyright ul{
-        display: flex;
-        padding: 0;
-    }
-    .copyright ul li{
-        padding: 0;
-        margin-top: 20px;
-        margin-right: 10px;
     }
 }
 
