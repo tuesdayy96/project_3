@@ -195,6 +195,11 @@
         width: 60%;
         align-self: center;
     }
+    .item h2{
+        font-family: 'GongGothicBold';
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
     .item button{
         width: 80%;
         align-self: center;
@@ -342,6 +347,7 @@
     }
     .p3 .sale h2{
         font-size: 2rem;
+        font-family: 'GongGothicBold';
         padding: 15px;
         color:#fff;
     }
@@ -425,6 +431,8 @@
         position: relative;
     }
     .soon h2{
+        font-family: 'GongGothicBold';
+        letter-spacing: 3px;
         box-shadow: 0 2px 4px 1px #000;
         height: 80px;
         line-height: 80px;
@@ -761,6 +769,10 @@
         flex-direction: column;
         justify-content: space-around;
     }
+    .catalogue h2{
+        font-family: 'GongGothicBold';
+        letter-spacing: 1px;
+    }
 
         /* 카탈로그 버튼 */
     #logue{width: 130px;height: 30px;line-height: 30px;background-color: rgb(0,150,255);color: #fff;border: none;transition: all 0.5s;position: relative;}
@@ -1002,6 +1014,11 @@
         width: 60%;
         align-self: center;
     }
+    .item h2{
+        font-family: 'GongGothicBold';
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
     .item button{
         width: 80%;
         align-self: center;
@@ -1152,12 +1169,15 @@
         
     }
     .p3 .sale h2{
-        font-size: 2rem;
+        font-size: 3rem;
+        font-family: 'GongGothicBold';
+        letter-spacing: 2px;
         padding: 15px;
         color:#fff;
     }
     .p3 .sale h3{
-        font-size: 50px;
+        font-size: 40px;
+        font-family: 'GongGothicLight';
         padding: 0 15px;
         color: #fff;
     }
@@ -1235,6 +1255,8 @@
         position: relative;
     }
     .soon h2{
+        font-family: 'GongGothicBold';
+        letter-spacing: 3px;
         box-shadow: 0 2px 4px 1px #000;
         height: 80px;
         line-height: 80px;
@@ -1536,6 +1558,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .catalogue h2{
+        font-family: 'GongGothicBold';
+        letter-spacing: 3px;
     }
 
         /* 카탈로그 버튼 */
