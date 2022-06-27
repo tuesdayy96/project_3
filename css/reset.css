@@ -46,4 +46,14 @@ a{
     height:100%; 
     position:relative;
 }
-
+@media screen and (max-width:500px) {
+    body{
+        overflow-y: visible;
+    }
+    body::-webkit-scrollbar{
+        width: 0;
+    }
+    #dot{
+        display: none;
+    }
+}
