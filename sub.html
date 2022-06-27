@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Games</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
     <link rel="icon" href="img/title.png">
 </head>
 <body>
@@ -41,7 +43,7 @@
                 </div>
             </div>
         </header>
-            <div class="head_outer">
+        <div class="head_outer">
                 <a id="hideBtn" href="javascript:void(0)" onclick="hideMenu()">X</a>
                 <div class="hide_content">
                     <a href="">스토어</a>
@@ -60,11 +62,131 @@
                         <span title="드">드</span>
                     </div>
                 </div>
+        </div>
+
+        <div id="content1">
+            <div class="bar_wrap">
+                <div class="content_bar">
+                    <div class="bar_item">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg css-uwwqev" viewBox="0 0 21 20" preserveAspectRatio="xMidYMid meet"><g transform="scale(1 -1) rotate(-45 -11.93502884 -2)" stroke="currentColor" stroke-width="1.65" fill="none" fill-rule="evenodd"><circle cx="7.70710678" cy="7.70710678" r="7"></circle><path d="M15.2071068 8.62132034h5.6923881" stroke-linecap="square"></path></g></svg>
+                        </button>
+                        <input type="text" placeholder="스토어 검색">
+                    </div>
+                    <div class="bar_item">
+                        <span>탐색</span>
+                    </div>
+                    <div class="bar_item">
+                        <span>찾아보기</span>
+                    </div>
+                    <div class="bar_item">
+                        <span>새소식</span>
+                    </div>
+                </div>
             </div>
+            <div id="content2">
+                <div class="content_title">
+                    <h2>폴가이즈</h2>
+                    <div class="title_bar">
+                        <div class="review">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svg " viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path class="edit" d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"></path></svg>
+                            </span>
+                            <span class="score">4</span>
+                        </div>
+                        <div class="review">
+                            <img src="img/sub/chicken.svg" class="svg" alt="">
+                            <span>초보자에게 적합합니다.</span>
+                        </div>
+                        <div class="review">
+                            <img src="img/sub/earth.svg" class="svg" alt="">
+                            <span>캐릭터가 다양합니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content3">
+                <div class="category">
+                    <div class="no1">
+                        <span><a href="#">소개</a></span>
+                        <span><a href="#">애드온</a></span>
+                        <span><a href="#">업적</a></span>
+                    </div>
+                </div>
+                <div class="content4">
+                    <div class="content4_rayout">
+                        <div class="main1">
+                            <div class="main_slide">
+                                <div class="slide_inner">
+                                    <img src="img/sub/slide1.jpg" alt="">
+                                    <img src="img/sub/slide2.jpg" alt="">
+                                    <img src="img/sub/slide5.jpg" alt="">
+                                    <img src="img/sub/slide6.jpg" alt="">
+                                    <img src="img/sub/slide7.jpg" alt="">
+                                    <img src="img/sub/slide8.jpg" alt="">
+                                    <img src="img/sub/slide9.jpg" alt="">
+                                    <img src="img/sub/slide10.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="main_thumb">
+                                <button id="prev"><span>&lt;</span></button>
+                                <button id="next"><span>&gt;</span></button>
+                                <div class="thumb_1">
+                                    <div class="thumb_inner">
+                                        <img class="on" src="img/sub/slide1.jpg" alt="">
+                                        <img src="img/sub/slide2.jpg" alt="">
+                                        <img src="img/sub/slide5.jpg" alt="">
+                                        <img src="img/sub/slide6.jpg" alt="">
+                                        <img src="img/sub/slide7.jpg" alt="">
+                                        <img src="img/sub/slide8.jpg" alt="">
+                                        <img src="img/sub/slide9.jpg" alt="">
+                                        <img src="img/sub/slide10.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main_intro">
+                                <div class="intro1">
+                                    <p>폴가이즈는 무료 크로스 플랫폼, 대규모 멀티플레이어, 파티로얄 게임으로 친구들과 함께 점점 어려워지는 장애물 코스로 구성된 라운드에 참여하여 단 한 명의 행운의 승자만 남을 때까지 경쟁하게 됩니다!</p>
+                                    <ul class="util">
+                                        <li>
+                                            <span>장르</span>
+                                            <a href="#">파티</a>
+                                        </li>
+                                        <li>
+                                            <span>기능</span>
+                                            <a href="#">업적</a>,
+                                            <a href="#">컨트롤러 지원</a>,
+                                            <a href="#">멀티플레이어</a>,
+                                            <a href="#">경쟁</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-            <div></div>
 
-            <footer class="box">
+                        <div class="sub1">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="box">
                 <div class="foot_inner">
                     <ul class="sns">
                         <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
