@@ -13,6 +13,17 @@ $(function(){
         $('.slide_inner img').eq(i).stop().fadeIn();
         $('.slide_inner img').eq(i).siblings().stop().fadeOut();
     })
+
+    $('.toggle_Btn').click(function(){
+        $('.intro2_hide').toggleClass('hidden');
+        if($(this).prop('value') == 1){
+            $(this).html('접기');
+            $(this).prop('value',2);
+        } else {
+            $(this).html('펼치기') 
+            $(this).prop('value',1);
+        }
+    });
 })
 
 

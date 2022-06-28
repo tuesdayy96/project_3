@@ -144,7 +144,7 @@ $(function(){
     })
 })
        
-// 풀페이지5 ~~ 푸터
+// 풀페이지5
 $(function(){
     $('.logueinner li').click(function(){
         $(this).stop().animate({width : '90%'},'slow');
@@ -152,14 +152,4 @@ $(function(){
         $(this).addClass('close');
         $(this).siblings().removeClass('close');
     })
-
-
-    // 푸터
-    $('.re_btn').click(function(){
-        $('.container').eq(0).stop().slideToggle();
-    })
-    $('.re_btn2').click(function(){
-        $('.container').eq(1).stop().slideToggle();
-    })
-
 })
