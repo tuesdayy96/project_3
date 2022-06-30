@@ -15,6 +15,7 @@
 </head>
 <body>
     <div id="wrap">
+        <!-- 헤더 시작 -->
         <header>
             <div class="head_inner">
                 <div class="logo">
@@ -63,8 +64,11 @@
                     </div>
                 </div>
         </div>
+        <!-- 헤더 끝 -->
 
+        <!-- 메인컨텐츠 시작-->
         <div id="content1">
+            <!-- 컨텐츠 탐색 바(스티키) -->
             <div class="bar_wrap">
                 <div class="content_bar">
                     <div class="bar_item">
@@ -84,6 +88,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 메인컨텐츠헤더 -->
             <div id="content2">
                 <div class="content_title">
                     <h2>폴가이즈</h2>
@@ -122,7 +127,9 @@
                     </div>
                 </div>
             </div>
+            <!-- 메인컨텐츠 섹션 -->
             <div id="content3">
+                <!-- 카테고리 -->
                 <div class="category">
                     <div class="no1">
                         <span><a href="#">소개</a></span>
@@ -132,6 +139,7 @@
                 </div>
                 <div class="content4">
                     <div class="content4_rayout">
+                        <!-- 메인 슬라이드 -->
                         <div class="main1">
                             <div class="main_slide">
                                 <div class="slide_inner">
@@ -198,7 +206,7 @@
                                 <button class="toggle_Btn" value="1">펼치기</button>
                             </div>
                         </div>
-
+                        <!-- 구매 리모컨 -->
                         <div class="sub1">
                             <div class="sub_bar">
                                 <div class="sub_logo">
@@ -231,9 +239,10 @@
                             </div>
                         </div>
                     </div>
-
+            <!-- 메인컨텐츠 섹션 끝 / 서브컨텐츠 섹션 시작 -->
                     <div class="content5">
                         <div class="content5_rayout">
+                            <!-- 업적 소개 -->
                             <div class="achive">
                                 <h3>획득 가능 업적</h3>
                                 <ul>
@@ -270,6 +279,7 @@
                                 </ul>
                                 <button class="achive_btn"><span>모든 업적 보기</span></button>
                             </div>
+                            <!-- 다운로드 컨텐츠 -->
                             <div class="addon">
                                 <h3>애드온 / DLC</h3>
                                 <div class="addon_bundle">
@@ -366,6 +376,7 @@
                                 </div>
                                 <button class="add_btn">더 보기</button>
                             </div>
+                            <!-- 평가 -->
                             <div class="rating">
                                 <h3>에픽 플레이어 평가</h3>
                                 <span>에픽게임즈 에코시스템 내 플레이어의 의견입니다.</span>
@@ -437,33 +448,118 @@
                                                         <circle class="circlePath c_score" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
                                                     </svg>
                                                     <div class="circle_gauge"></div>
+                                                    <span>평론가 추천</span>
                                                 </li>
-                                                <li>
+                                                <li class="c_second">
                                                     <svg class="metacircle" viewbox="0 0 75 75" version="1.1" class="cicles">
                                                         <circle class="circlePath" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
-                                                        <circle class="circlePath c_score" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
+                                                        <circle class="circlePath c_second" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
                                                     </svg>
-                                                    <div class="circle_gauge"></div>
+                                                    <div class="circle_gauge">80%</div>
+                                                    <span>최고 평론가 평균</span>
                                                 </li>
-                                                <li>
+                                                <li class="c_third">
                                                     <svg class="metacircle" viewbox="0 0 75 75" version="1.1" class="cicles">
                                                         <circle class="circlePath" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
-                                                        <circle class="circlePath c_score" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
+                                                        <circle class="circlePath c_third" stroke-width="3" cx="50%" cy="50%" r="36"></circle>
                                                     </svg>
-                                                    <div class="circle_gauge"></div>
+                                                    <div class="circle_gauge">긍정적</div>
+                                                    <span>OpenCritic 평가</span>
                                                 </li>
                                             </ul>
+                                            <div class="review">
+                                                <div class="review_box">
+                                                   <div class="review_box_upside">
+                                                        <p>GamesRadar+</p>
+                                                        <span class="css_gray">작성자: Mark Delaney</span>
+                                                   </div>
+                                                   <div class="review_box_downside">
+                                                        <div>
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                                                            </span>
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                                                            </span>
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg " viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                                                            </span>
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z" fill="currentColor"></path></svg>
+                                                            </span>
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 36 34"><path class="edit" d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"></path><defs>
+                                                                    <linearGradient id="star_gradi" x1="0" y1="0" x2="1" y2="0">
+                                                                        <stop stop-color="rgb(245, 245, 245)" offset="50%"></stop>
+                                                                        <stop stop-color="transparent" offset="50%"></stop>
+                                                                    </linearGradient>
+                                                                </defs></svg>
+                                                            </span>
+                                                        </div>
+                                                        <p class="css_gray">
+                                                            "Nothing else has paired high tension with complete silliness like this, and Fall Guys reveals we should've been doing it a long time ago"
+                                                        </p>
+                                                        <a href="" class="css_gray"><span>리뷰 자세히 보기</span></a>
+                                                   </div>
+                                                </div>
+                                                <div class="review_box">
+                                                    <div class="review_box_upside">
+                                                        <p>PC Gamer</p>
+                                                        <span class="css_gray">작성자: Christopher Livingston</span>
+                                                    </div>
+                                                    <div class="review_box_downside">
+                                                        <div>
+                                                            <span>80 / 100</span>
+                                                        </div>
+                                                        <p class="css_gray">
+                                                            "In a genre overstuffed with guns and grenades, this cute and cuddly battle royale stands out"
+                                                        </p>
+                                                        <a href="" class="css_gray"><span>리뷰 자세히 보기</span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="review_box">
+                                                    <div class="review_box_upside">
+                                                        <p>IGN</p>
+                                                        <span class="css_gray">작성자: Simon Cardy</span>
+                                                    </div>
+                                                    <div class="review_box_downside">
+                                                        <div>
+                                                            <span>8 / 10</span>
+                                                        </div>
+                                                        <p class="css_gray">
+                                                            "A collection of exciting minigames and a bursy of every colour under the rainbow makes Fall Guys a consistent delight"
+                                                        </p>
+                                                        <a href="" class="css_gray"><span>리뷰 자세히 보기</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 게임 사양 -->
+                            <div class="system">
+                                <h3>사양</h3>
+                                <div class="sysbox">
+                                    <div class="sys1">윈도우</div>
+                                    <div class="sys2">
+                                        <div>최소사양</div>
+                                        <div>권장사양</div>
+                                    </div>
+                                    <div class="sys3">로그인</div>
+                                    <div class="sys4">지원언어</div>
+                                    <div class="sys5">저작권</div>
+                                </div>
+                            </div>
+                        <!-- 서브컨텐츠 섹션 끝 -->
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
+        <!-- 메인컨텐츠 끝 -->
 
+        <!-- 푸터 시작 -->
         <footer class="box">
                 <div class="foot_inner">
                     <ul class="sns">
@@ -522,6 +618,7 @@
                     </div>
                 </div>
         </footer>
+        <!-- 푸터 끝 -->
     </div>
 </body>
 </html>

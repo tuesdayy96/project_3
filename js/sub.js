@@ -71,11 +71,11 @@ $('.toggle_Btn').click(function(){
 function metaScore(){
     var u = 3.14;
     var r = 36;
+    const c_meta = document.querySelector('.metacircle');
     const c_path = document.querySelector('.c_score');
     const c_gauge = document.querySelector('.circle_gauge');
     var c_Length = 2 * u * r;
     const c_v = 2 * u * r;
-
     c_path.style.strokeDasharray = c_Length;
     c_path.style.strokeDashoffset = c_Length;
     var callInterval = setInterval(function(){
@@ -85,6 +85,8 @@ function metaScore(){
         c_gauge.innerHTML = '<span>'+ c_persent +'%'+'</span>';
         if(c_Length <= c_v -(c_v*0.91)){
             clearInterval(callInterval);
+            
         }
     },10)
+    c_meta.addEventListener('mouseover',metaScore);
 }

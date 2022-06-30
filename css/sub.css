@@ -444,7 +444,7 @@ a.cart,a.wish{
     margin: 20px 0;
 }
 .achive{
-    width: 60%;
+    width: 65%;
     margin: 50px 0;
 }
 .achive ul{
@@ -485,7 +485,7 @@ a.cart,a.wish{
     color: #fff;
 }
 .addon{
-    width: 60%;
+    width: 65%;
 }
 .addon_bundle{
     width: 100%;
@@ -581,7 +581,10 @@ a.cart,a.wish{
     opacity: 0.8;
 }
 .rating{
-    width: 60%;
+    width: 65%;
+}
+.rating h3{
+    margin-top: 80px;
 }
 .rating > span {
     font-size: 12px;
@@ -589,7 +592,7 @@ a.cart,a.wish{
 }
 .rating_wrap{
     width: 100%;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 .rating_star{
     width: 100%;
@@ -639,15 +642,20 @@ a.cart,a.wish{
     width: 100%;
 }
 .metascore_inner{
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .metascore_inner li{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     position: relative;
     margin: 20px;
+}
+.metascore_inner li > span{
+    display: block;
+    margin: 15px 0;
 }
 .metacircle{
     transform: rotate(-90deg);
@@ -658,12 +666,49 @@ a.cart,a.wish{
     height: 75px;
 }
 .circlePath:first-child{
-    stroke: rgb(0, 0, 0);
+    stroke: rgb(58, 58, 58);
     fill: none;
 }
 .circlePath:last-child{
     stroke: rgb(0,116,228);
     fill: none;
+}
+circle.c_second{
+    stroke-dasharray: 226.08;
+    stroke-dashoffset: 45.216;
+}
+.c_second:hover circle.c_second{
+    animation: circles 3s linear;
+}
+@keyframes circles {
+    0%{
+        stroke-dashoffset: 226.08;
+    }
+    100%{
+        stroke-dashoffset: 45.216;
+    }
+}
+.c_third:hover circle.c_third{
+    animation: dash 3s linear;
+}
+@keyframes dash {
+    0%{
+        stroke-dashoffset: 226.08;
+        stroke-dasharray: 0;
+    }
+    30%{
+        stroke-dasharray: 20;
+    }
+    60%{
+        stroke-dasharray: 50;
+    }
+    90%{
+        stroke-dasharray: 100;
+    }
+    100%{
+        stroke-dashoffset:226.08;
+        stroke-dasharray: 226.08;
+    }  
 }
 .circle_gauge{
     text-align: center;
@@ -672,4 +717,48 @@ a.cart,a.wish{
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 13px;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.review_box{
+    position: relative;
+    margin: 60px 10px;
+    width: 100%;
+    min-width: 220px;
+    height: 300px;
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(20,20,20);
+}
+.review_box_upside{
+    height: auto;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.review_box_downside{
+    font-size: 14px;
+}
+.review_box_downside p{
+    line-height: 20px;
+    margin: 10px 0;
+}
+.review_box_downside a{
+    position: absolute;
+    bottom: 15px;
+}
+.css_gray{
+    color: rgb(100,100,100);
+}
+.system{
+    width: 65%
+}
+.sysbox{
+    width:100%;
+    padding: 30px;
+    background-color: rgb(42,42,42);
 }
