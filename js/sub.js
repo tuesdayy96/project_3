@@ -2,12 +2,16 @@ $(function(){
     slideBundle();
     toggleUpDown();
     metaScore();
+    clickpage();
+    filltering();
 })
 
 // 슬라이드 종합세트
 function slideBundle(){
     var s_width=0;
     var s_margin=0;
+    var s_img = $('.thumb_inner img');
+    var s_index = s_img.length;
     function prevSlide(){
         $('.thumb_inner img:last').prependTo('.thumb_inner');
         $('.thumb_inner').css('margin-left', -(s_width + s_margin));
@@ -22,6 +26,7 @@ function slideBundle(){
     function re_slide(){
         s_width = $('.thumb_inner img').eq(0).width();
         s_margin = parseInt($('.thumb_inner img').eq(0).css('margin-right'));
+        $('.thumb_inner').width(s_index*(s_margin+s_width));
     }
     function resize(){
         $(window).resize(function(){
@@ -54,6 +59,34 @@ function slideBundle(){
         $('.slide_inner img').eq(i).siblings().stop().fadeOut();
     })
 }
+
+// 페이지 전환
+function clickpage(){
+    $('.no1 span').click(function(){
+        var ii = $(this).index();
+        $(this).addClass('on');
+        $(this).siblings().removeClass('on');
+        $('.cnt').eq(ii).show();
+        $('.cnt').eq(ii-1).hide();
+    })
+}
+
+// 필터링
+function filltering(){
+    $('.filterbtn').click(function(){
+        $(this).siblings('ul').stop().toggle();
+        $(this).children('.arrdown').toggleClass('on');
+    })
+    $('#keywords').on('keyup',function(){
+        var value = $(this).val().toLowerCase();
+        $('.sorter').filter(function(){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        })
+    })
+}
+// 정렬
+
+
 // 게임소개 펼치기/접기
 function toggleUpDown(){
 $('.toggle_Btn').click(function(){
@@ -68,6 +101,7 @@ $('.toggle_Btn').click(function(){
 });
 }
 
+// 평가 애니메이션
 function metaScore(){
     var u = 3.14;
     var r = 36;

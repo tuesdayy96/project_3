@@ -6,6 +6,14 @@ $(function(){
     $('.re_btn2').click(function(){
         $('.container').eq(1).stop().slideToggle();
     })
+    $(window).resize(function(){
+        if($(window).innerWidth()>801){
+            $('.head_outer').hide();
+        } else {
+            $('.head_outer').show();
+        }
+    })
+    
 })
 
 

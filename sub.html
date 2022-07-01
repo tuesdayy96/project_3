@@ -132,13 +132,13 @@
                 <!-- 카테고리 -->
                 <div class="category">
                     <div class="no1">
-                        <span><a href="#">소개</a></span>
+                        <span class="on"><a href="#">소개</a></span>
                         <span><a href="#">애드온</a></span>
                         <span><a href="#">업적</a></span>
                     </div>
                 </div>
-                <div class="content4">
-                    <div class="content4_rayout">
+                <div class="content4 cnt">
+                    <div class="content4_layout">
                         <!-- 메인 슬라이드 -->
                         <div class="main1">
                             <div class="main_slide">
@@ -241,7 +241,7 @@
                     </div>
             <!-- 메인컨텐츠 섹션 끝 / 서브컨텐츠 섹션 시작 -->
                     <div class="content5">
-                        <div class="content5_rayout">
+                        <div class="content5_layout">
                             <!-- 업적 소개 -->
                             <div class="achive">
                                 <h3>획득 가능 업적</h3>
@@ -317,7 +317,7 @@
                                 <div class="addon_bundle">
                                     <div class="dlc">
                                         <div class="dlc_upside">
-                                            <div class="dlc_upsie_c1">
+                                            <div class="dlc_upside_c1">
                                                 <a href=""><img src="img/sub/add2.webp" alt=""></a>
                                             </div>
                                             <div class="dlc_upside_c2">
@@ -468,6 +468,7 @@
                                                 </li>
                                             </ul>
                                             <div class="review">
+                                                <a href="#" class="viewall">모든 리뷰보기</a>
                                                 <div class="review_box">
                                                    <div class="review_box_upside">
                                                         <p>GamesRadar+</p>
@@ -499,7 +500,10 @@
                                                         <p class="css_gray">
                                                             "Nothing else has paired high tension with complete silliness like this, and Fall Guys reveals we should've been doing it a long time ago"
                                                         </p>
-                                                        <a href="" class="css_gray"><span>리뷰 자세히 보기</span></a>
+                                                        <a href="" class="css_gray">
+                                                            <span>리뷰 자세히 보기</span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg css-uwwqev" viewBox="0 0 13 13"><path d="M10,10 L3,10 L3,3 L6.5,3 L6.5,2 L3,2 C2.445,2 2,2.45 2,3 L2,10 C2,10.55 2.445,11 3,11 L10,11 C10.55,11 11,10.55 11,10 L11,6.5 L10,6.5 L10,10 Z M7.5,0 L7.5,3 L9.295,3 L4.38,7.915 L5.085,8.62 L10,3.705 L10,5.5 L11,5.5 L11,2 L7.5,2 Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                                                        </a>
                                                    </div>
                                                 </div>
                                                 <div class="review_box">
@@ -514,7 +518,10 @@
                                                         <p class="css_gray">
                                                             "In a genre overstuffed with guns and grenades, this cute and cuddly battle royale stands out"
                                                         </p>
-                                                        <a href="" class="css_gray"><span>리뷰 자세히 보기</span></a>
+                                                        <a href="" class="css_gray">
+                                                            <span>리뷰 자세히 보기</span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg css-uwwqev" viewBox="0 0 13 13"><path d="M10,10 L3,10 L3,3 L6.5,3 L6.5,2 L3,2 C2.445,2 2,2.45 2,3 L2,10 C2,10.55 2.445,11 3,11 L10,11 C10.55,11 11,10.55 11,10 L11,6.5 L10,6.5 L10,10 Z M7.5,0 L7.5,3 L9.295,3 L4.38,7.915 L5.085,8.62 L10,3.705 L10,5.5 L11,5.5 L11,2 L7.5,2 Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="review_box">
@@ -529,7 +536,10 @@
                                                         <p class="css_gray">
                                                             "A collection of exciting minigames and a bursy of every colour under the rainbow makes Fall Guys a consistent delight"
                                                         </p>
-                                                        <a href="" class="css_gray"><span>리뷰 자세히 보기</span></a>
+                                                        <a href="" class="css_gray">
+                                                            <span>리뷰 자세히 보기</span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg css-uwwqev" viewBox="0 0 13 13"><path d="M10,10 L3,10 L3,3 L6.5,3 L6.5,2 L3,2 C2.445,2 2,2.45 2,3 L2,10 C2,10.55 2.445,11 3,11 L10,11 C10.55,11 11,10.55 11,10 L11,6.5 L10,6.5 L10,10 Z M7.5,0 L7.5,3 L9.295,3 L4.38,7.915 L5.085,8.62 L10,3.705 L10,5.5 L11,5.5 L11,2 L7.5,2 Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -541,19 +551,221 @@
                             <div class="system">
                                 <h3>사양</h3>
                                 <div class="sysbox">
-                                    <div class="sys1">윈도우</div>
-                                    <div class="sys2">
-                                        <div>최소사양</div>
-                                        <div>권장사양</div>
+                                    <div class="sys1">
+                                        <div>
+                                            <span>WINDOWS</span>
+                                        </div>
                                     </div>
-                                    <div class="sys3">로그인</div>
-                                    <div class="sys4">지원언어</div>
-                                    <div class="sys5">저작권</div>
+                                    <div class="sys2">
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>최소사양</span>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>권장사양</span>
+                                            </div>
+                                        </div>
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>운영체제</span>
+                                                <p>Windows 10 64비트</p>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>운영체제</span>
+                                                <p>Windows 10 64비트</p>
+                                            </div>
+                                        </div>
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>프로세서</span>
+                                                <p>Intel Core i5 또는 AMD 동급의 제품</p>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>프로세서</span>
+                                                <p>Intel Core i5 또는 AMD 동급의 제품</p>
+                                            </div>
+                                        </div>
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>메모리</span>
+                                                <p>8GB RAM</p>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>메모리</span>
+                                                <p>8GB RAM</p>
+                                            </div>
+                                        </div>
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>스토리지</span>
+                                                <p>2GB의 여유공간</p>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>스토리지</span>
+                                                <p>2GB의 여유공간</p>
+                                            </div>
+                                        </div>
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>그래픽 카드</span>
+                                                <p>NVIDIA GTX 660 또는 AMD Radeon HD 7950</p>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>그래픽 카드</span>
+                                                <p>NVIDIA GTX 660 또는 AMD Radeon HD 7950</p>
+                                            </div>
+                                        </div>
+                                        <div class="sys2_options">
+                                            <div class="minOption">
+                                                <span>기타</span>
+                                                <p>광대역 인터넷 연결</p>
+                                            </div>
+                                            <div class="commonOption">
+                                                <span>기타</span>
+                                                <p>광대역 인터넷 연결</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sys3">
+                                        <span>로그인</span>
+                                        <p>Epic Games 계정 필요</p>
+                                    </div>
+                                    <div class="sys4">
+                                        <span>지원언어</span>
+                                        <p>오디오: 영어 | 텍스트: 한국어, 중국어(간체), 중국어(번체), 프랑스어, 독일어, 이탈리아어, 일본어, 포르투갈어(브라질), 러시아어, 영어, 스페인어(스페인)</p>
+                                    </div>
+                                    <div class="sys5">
+                                        <p>© 2022 Mediatonic Limited. All rights reserved. Mediatonic 로고와 폴가이즈 마크, 로고 및 캐릭터의 저작권은 Mediatonic Limited에 있습니다.</p>
+                                        <a href="#">개인정보처리방침</a>
+                                    </div>
                                 </div>
                             </div>
                         <!-- 서브컨텐츠 섹션 끝 -->
                         </div>
                     </div>
+                </div>
+                <div class="content6 cnt">
+                    <div class="content6_layout">
+                        <div class="content6_left">
+                            <div class="sort">
+                                <div>
+                                    <button>
+                                        <span>표시 : </span>
+                                        <span onclick="sorting()">ab</span>
+                                        <span></span>
+                                    </button>
+                                    <div></div>
+                                </div>
+                            </div>
+
+                            <div class="addSect">
+                                <ul class="addSection">
+                                    <li class="sorter">
+                                        <div class="addImage">
+                                            <img src="img/sub/add_1.webp" alt="">
+                                        </div>
+                                        <div>
+                                            <span>폴가이즈 -터지는 폭죽 팩</span>
+                                        </div>
+                                        <div>
+                                            <span>₩3,920</span>
+                                        </div>
+                                    </li>
+                                    <li class="sorter">
+                                        <div class="addImage">
+                                            <img src="img/sub/add_2.webp" alt="">
+                                        </div>
+                                        <div>
+                                            <span>폴가이즈 - 스타터팩</span>
+                                        </div>
+                                        <div>
+                                            <span>₩9,900</span>
+                                        </div>
+                                    </li>
+                                    <li class="sorter">
+                                        <div class="addImage">
+                                            <img src="img/sub/add_3.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <span>폴가이즈 - 1,000 쇼벅스</span>
+                                        </div>
+                                        <div>
+                                            <span>₩7,920</span>
+                                        </div>
+                                    </li>
+                                    <li class="sorter">
+                                        <div class="addImage">
+                                            <img src="img/sub/add4.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <span>폴가이즈 - 1,000 쇼벅스</span>
+                                        </div>
+                                        <div>
+                                            <span>₩19,920</span>
+                                        </div>
+                                    </li>
+                                    <li class="sorter">
+                                        <div class="addImage">
+                                            <img src="img/sub/add5.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <span>폴가이즈 - 5,000 쇼벅스</span>
+                                        </div>
+                                        <div>
+                                            <span>₩31,920</span>
+                                        </div>
+                                    </li>
+                                    <li class="sorter">
+                                        <div class="addImage">
+                                            <img src="img/sub/add6.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <span>폴가이즈 - 13,500 쇼벅스</span>
+                                        </div>
+                                        <div>
+                                            <span>₩79,920</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content6_right">
+                            <div class="filterbox">
+                                <h3>필터</h3>
+                                <div class="keyword filter">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" class="svg css-uwwqev" viewBox="0 0 21 20" preserveAspectRatio="xMidYMid meet"><g transform="scale(1 -1) rotate(-45 -11.93502884 -2)" stroke="currentColor" stroke-width="1.65" fill="none" fill-rule="evenodd"><circle cx="7.70710678" cy="7.70710678" r="7"></circle><path d="M15.2071068 8.62132034h5.6923881" stroke-linecap="square"></path></g></svg></span>
+                                    <input id="keywords" type="text" placeholder="키워드">
+                                </div>
+                                <div class="filter">
+                                    <div class="filterbtn"><span>가격</span><span class="arrdown">&nbsp;</span></div>
+                                    <ul>
+                                        <li>무료</li>
+                                        <li>₩11,000 미만</li>
+                                        <li>₩22,000 미만</li>
+                                        <li>₩33,000 미만</li>
+                                        <li>₩15,000 이상</li>
+                                        <li>할인</li>
+                                    </ul>
+                                </div>
+                                <div class="filter">
+                                    <div class="filterbtn"><span>종류</span><span class="arrdown">&nbsp;</span></div>
+                                    <ul>
+                                        <li>게임 애드온</li>
+                                        <li>도서</li>
+                                        <li>비디오</li>
+                                        <li>사운드트랙</li>
+                                    </ul>
+                                </div>
+                                <div class="filter">
+                                    <div class="filterbtn"><span>플랫폼</span><span class="arrdown">&nbsp;</span></div>
+                                    <ul>
+                                        <li>Mac OS</li>
+                                        <li>Windows</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
                 </div>
             </div>
         </div>
