@@ -684,10 +684,6 @@
         transform: rotate(-90deg);
         transform-origin: 50% 50%;
     }
-    .circles{
-        width: 75px;
-        height: 75px;
-    }
     .circlePath:first-child{
         stroke: rgb(58, 58, 58);
         fill: none;
@@ -700,7 +696,7 @@
         stroke-dasharray: 226.08;
         stroke-dashoffset: 45.216;
     }
-    .c_second:hover circle.c_second{
+    .circle2:hover circle.c_second{
         animation: circles 3s linear;
     }
     @keyframes circles {
@@ -711,7 +707,7 @@
             stroke-dashoffset: 45.216;
         }
     }
-    .c_third:hover circle.c_third{
+    .circle3:hover circle.c_third{
         animation: dash 3s linear;
     }
     @keyframes dash {
@@ -719,20 +715,9 @@
             stroke-dashoffset: 226.08;
             stroke-dasharray: 0;
         }
-        10%{
-            stroke-dasharray: 20;
-        }
-        60%{
-            stroke-dasharray: 50;
-        }
-        80%{
-            stroke-dasharray: 100;
-        }
-        90%{
-            stroke-dasharray: 20;
-        }
         100%{
-            stroke-dasharray: 226.08;
+            stroke-dashoffset: 10;
+            stroke-dasharray: 20;
         }  
     }
     .circle_gauge{
@@ -1015,6 +1000,7 @@
     .content7{
         width: 100%;
         margin-top: 50px;
+        display: none;
     }
     .achivemain{
         width: 80%;
@@ -1728,10 +1714,6 @@
         transform: rotate(-90deg);
         transform-origin: 50% 50%;
     }
-    .circles{
-        width: 75px;
-        height: 75px;
-    }
     .circlePath:first-child{
         stroke: rgb(58, 58, 58);
         fill: none;
@@ -1744,7 +1726,7 @@
         stroke-dasharray: 226.08;
         stroke-dashoffset: 45.216;
     }
-    .c_second:hover circle.c_second{
+    .circle2:hover circle.c_second{
         animation: circles 3s linear;
     }
     @keyframes circles {
@@ -1755,28 +1737,17 @@
             stroke-dashoffset: 45.216;
         }
     }
-    .c_third:hover circle.c_third{
-        animation: dash 3s linear;
+    .circle3:hover circle.c_third{
+        animation: dash 3s ease;
     }
     @keyframes dash {
         0%{
             stroke-dashoffset: 226.08;
             stroke-dasharray: 0;
         }
-        10%{
-            stroke-dasharray: 20;
-        }
-        60%{
-            stroke-dasharray: 50;
-        }
-        80%{
-            stroke-dasharray: 100;
-        }
-        90%{
-            stroke-dasharray: 20;
-        }
         100%{
-            stroke-dasharray: 226.08;
+            stroke-dashoffset: 10;
+            stroke-dasharray: 20;
         }  
     }
     .circle_gauge{
@@ -2037,6 +2008,7 @@
     .content7{
         width: 100%;
         margin-top: 50px;
+        display: none;
     }
     .achivemain{
         width: 80%;

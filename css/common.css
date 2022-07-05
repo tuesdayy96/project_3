@@ -3,7 +3,7 @@
         .Btn:hover{background-color: rgb(226,63,225);}
         .Btn span{display: inline-block;position: relative;margin:0;width: 17%;width: auto;text-align: center;box-sizing: border-box;transition: all .3s;color: transparent;overflow: hidden;transform-style: preserve-3d;}
         .Btn span::after{content: attr(title);position: absolute;display: block;top: 0;left: 0;width: 100%;height: 100%;color: #fff;box-sizing: border-box;transform: rotateX(0deg);transform-origin: 50% 50% -30px;transition: all 0.3s;}
-        .Btn span:nth-child(1)::after{transition-delay: 0;}
+        .Btn span:nth-child(1)::after{transition-delay: 0s;}
         .Btn:hover span:nth-child(1)::after{transform: rotateX(-90deg);}
         .Btn span:nth-child(2)::after{transition-delay: 0.1s;}
         .Btn:hover span:nth-child(2)::after{transform: rotateX(-90deg);}
@@ -18,7 +18,7 @@
         .Btn span:nth-child(7)::after{transition-delay: 0.35s;}
         .Btn:hover span:nth-child(7)::after{transform: rotateX(-90deg);}
         .Btn span::before{content: attr(title);position: absolute;display: block;top: 0;left: 0;width: 100%;height: 100%;color: #fff;box-sizing: border-box;transform: rotateX(90deg);transform-origin: 50% 50% -30px;transition: all 0.3s;}
-        .Btn span:nth-child(1)::before{transition-delay: 0;}
+        .Btn span:nth-child(1)::before{transition-delay: 0s;}
         .Btn:hover span:nth-child(1)::before{transform: rotateX(0deg);background-color: rgb(226,63,225);}
         .Btn span:nth-child(2)::before{transition-delay: 0.1s;}
         .Btn:hover span:nth-child(2)::before{transform: rotateX(0deg);background-color: rgb(226,63,225);}
