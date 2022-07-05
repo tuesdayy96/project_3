@@ -147,8 +147,8 @@ $(function(){
 // 풀페이지5
 $(function(){
     $('.logueinner li').click(function(){
-        $(this).stop().animate({width : '90%'},'slow');
-        $(this).siblings().stop().animate({width:'20%'},'slow');
+        $(this).stop().animate({width : '90%'},'slow').css({zIndex:-1});
+        $(this).siblings().stop().animate({width:'20%'},'slow').css({zIndex:5});
         $(this).addClass('close');
         $(this).siblings().removeClass('close');
     })

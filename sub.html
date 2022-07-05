@@ -22,11 +22,11 @@
                     <h1><a href="#"></a></h1>
                 </div>
                 <ul class="menu">
-                    <li><a href="">스토어</a></li>
-                    <li><a href="">자주 묻는 질문</a></li>
-                    <li><a href="">지원센터</a></li>
-                    <li><a href="">언리얼 엔진</a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="index.html">스토어</a></li>
+                    <li><a href="index.html">자주 묻는 질문</a></li>
+                    <li><a href="index.html">지원센터</a></li>
+                    <li><a href="index.html">언리얼 엔진</a></li>
+                    <li><a href="index.html"></a></li>
                 </ul>
                 <div class="launcher">
                     <a id="downBtn" href="">
@@ -651,11 +651,11 @@
                                 <div>
                                     <button>
                                         <span>표시 : </span>
-                                        <span>ab</span>
+                                        <span id="standard"></span>
                                         <span id="sortvalue"></span>
                                     </button>
                                     <ul id="sortList">
-                                        <li id="all" onclick="">전체</li>
+                                        <li id="all" onclick="sortingAll()">전체</li>
                                         <li id="up" onclick="sortingUp()">가격:오름차순</li>
                                         <li id="down" onclick="sortingDown()">가격:내림차순</li>
                                     </ul>
@@ -663,16 +663,22 @@
                             </div>
 
                             <div class="addSect">
+                                <div id="hidden">
+                                    <div>
+                                        <span>검색 결과 없음</span>
+                                        <p>죄송하지만 검색 내용과 일치하는 결과를 찾을 수 없습니다.</p>
+                                    </div>
+                                </div>
                                 <ul class="addSection" id="addList">
                                     <li class="sorter" value="3920">
                                         <div class="addImage">
                                             <img src="img/sub/add_1.webp" alt="">
                                         </div>
                                         <div>
-                                            <span>폴가이즈 -터지는 폭죽 팩</span>
+                                            <span class="sortname">폴가이즈 -터지는 폭죽 팩</span>
                                         </div>
                                         <div>
-                                            <span class="won"></span><span class="add_price">3920</span>
+                                            <span class="won"></span><span class="add_price"></span>
                                         </div>
                                     </li>
                                     <li class="sorter" value="9900">
@@ -680,10 +686,10 @@
                                             <img src="img/sub/add_2.webp" alt="">
                                         </div>
                                         <div>
-                                            <span>폴가이즈 - 스타터팩</span>
+                                            <span class="sortname">폴가이즈 - 스타터팩</span>
                                         </div>
                                         <div>
-                                            <span class="won"></span><span class="add_price">9900</span>
+                                            <span class="won"></span><span class="add_price"></span>
                                         </div>
                                     </li>
                                     <li class="sorter" value="7920">
@@ -691,10 +697,10 @@
                                             <img src="img/sub/add_3.jpg" alt="">
                                         </div>
                                         <div>
-                                            <span>폴가이즈 - 1,000 쇼벅스</span>
+                                            <span class="sortname">폴가이즈 - 1,000 쇼벅스</span>
                                         </div>
                                         <div>
-                                            <span class="won"></span><span class="add_price">7920</span>
+                                            <span class="won"></span><span class="add_price"></span>
                                         </div>
                                     </li>
                                     <li class="sorter" value="19920">
@@ -702,10 +708,10 @@
                                             <img src="img/sub/add4.jpg" alt="">
                                         </div>
                                         <div>
-                                            <span>폴가이즈 - 2,800 쇼벅스</span>
+                                            <span class="sortname">폴가이즈 - 2,800 쇼벅스</span>
                                         </div>
                                         <div>
-                                            <span class="won"></span><span class="add_price">19920</span>
+                                            <span class="won"></span><span class="add_price"></span>
                                         </div>
                                     </li>
                                     <li class="sorter" value="31920">
@@ -713,10 +719,10 @@
                                             <img src="img/sub/add5.jpg" alt="">
                                         </div>
                                         <div>
-                                            <span>폴가이즈 - 5,000 쇼벅스</span>
+                                            <span class="sortname">폴가이즈 - 5,000 쇼벅스</span>
                                         </div>
                                         <div>
-                                            <span class="won"></span><span class="add_price">31920</span>
+                                            <span class="won"></span><span class="add_price"></span>
                                         </div>
                                     </li>
                                     <li class="sorter" value="79920">
@@ -724,52 +730,65 @@
                                             <img src="img/sub/add6.jpg" alt="">
                                         </div>
                                         <div>
-                                            <span>폴가이즈 - 13,500 쇼벅스</span>
+                                            <span class="sortname">폴가이즈 - 13,500 쇼벅스</span>
                                         </div>
                                         <div>
-                                            <span class="won"></span><span class="add_price">79920</span>
+                                            <span class="won"></span><span class="add_price"></span>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="content6_right">
-                            <div class="filterbox">
-                                <h3>필터</h3>
+                            <h3>필터</h3>
+                            <div class="filterwrap">
                                 <div class="keyword filter">
                                     <span><svg xmlns="http://www.w3.org/2000/svg" class="svg css-uwwqev" viewBox="0 0 21 20" preserveAspectRatio="xMidYMid meet"><g transform="scale(1 -1) rotate(-45 -11.93502884 -2)" stroke="currentColor" stroke-width="1.65" fill="none" fill-rule="evenodd"><circle cx="7.70710678" cy="7.70710678" r="7"></circle><path d="M15.2071068 8.62132034h5.6923881" stroke-linecap="square"></path></g></svg></span>
                                     <input id="keywords" type="text" placeholder="키워드">
                                 </div>
                                 <div class="filter">
                                     <div class="filterbtn"><span>가격</span><span class="arrdown">&nbsp;</span></div>
-                                    <ul>
-                                        <li>무료</li>        
+                                    <ul id="filterbox">
+                                        <li id="free">무료</li>        
                                         <li value="11000">₩11,000 미만</li> 
                                         <li value="22000">₩22,000 미만</li> 
                                         <li value="33000">₩33,000 미만</li> 
                                         <li value="15000">₩15,000 이상</li>
-                                        <li>할인</li>         
+                                        <li id="sale">할인</li>         
                                     </ul>
                                 </div>
                                 <div class="filter">
                                     <div class="filterbtn"><span>종류</span><span class="arrdown">&nbsp;</span></div>
-                                    <ul>
-                                        <li>게임 애드온</li> 
-                                        <li>도서</li>
-                                        <li>비디오</li>
-                                        <li>사운드트랙</li>
+                                    <ul id="filterbox2">
+                                        <li id="game">게임 애드온</li> 
+                                        <li id="book">도서</li>
+                                        <li id="vid">비디오</li>
+                                        <li id="sound">사운드트랙</li>
                                     </ul>
                                 </div>
                                 <div class="filter">
                                     <div class="filterbtn"><span>플랫폼</span><span class="arrdown">&nbsp;</span></div>
-                                    <ul>
-                                        <li>Mac OS</li>
-                                        <li>Windows</li> <!--aa-->
+                                    <ul id="filterbox3">
+                                        <li id="mac">Mac OS</li>
+                                        <li id="win">Windows</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>   
+                </div>
+                <div class="content7 cnt">
+                    <div class="achivemain">
+                        <div class="achivemain_left">
+                            <img src="img/sub/achivemain.jpg" alt="">
+                        </div>
+                        <div class="achivemain_right">
+                            <div class="right_input">
+                                <div><span>획득 가능 업적</span><span>34개 업적</span></div>
+                                <div><span>획득 가능 XP</span><span>1000 XP</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

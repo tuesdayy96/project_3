@@ -67,7 +67,7 @@ function clickpage(){
         $(this).addClass('on');
         $(this).siblings().removeClass('on');
         $('.cnt').eq(ii).show();
-        $('.cnt').eq(ii-1).hide();
+        $('.cnt').eq(ii).siblings('.cnt').hide();
     })
 }
 
@@ -77,15 +77,6 @@ function filltering(){
         $(this).siblings('ul').stop().toggle();
         $(this).children('.arrdown').toggleClass('on');
     })
-    
-    $('.filter ul li').on('click',function(){
-        var value = $(this).val();
-        console.log(value);
-        if($('.sorter').val()<value){
-                $(this).show();
-            }
-        })
-
     $('#keywords').on('keyup',function(){
         var value = $(this).val().toLowerCase();
         $('.sorter').filter(function(){

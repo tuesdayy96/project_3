@@ -806,6 +806,7 @@
         box-shadow: 0 0 30px 3px #333;
         filter: grayscale(80%);
         cursor: pointer;
+        position: relative;
     }
     .logueinner li:hover{
         filter: none;
