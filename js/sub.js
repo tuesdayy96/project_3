@@ -87,10 +87,24 @@ function filltering(){
     })
     $('#keywords').on('keyup',function(){
         var value = $(this).val().toLowerCase();
+        $('.filter ul li').removeClass('on')
         $('.sorter').filter(function(){
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            $('.sorter').each(function(){
+                if($(this).is(':hidden') == true){
+                    $('#hidden').show();
+                } else{
+                    $('#hidden').hide();
+                }
+            })
         })
+        
     });
+    $('.filter ul li').click(function(){
+        $('.filter ul li').removeClass('on')
+        $(this).toggleClass('on');
+    })
+    
     }
 
 // 게임소개 펼치기/접기

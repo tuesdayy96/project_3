@@ -83,6 +83,7 @@
     }
     .content_bar > div:hover{
         color:#000;
+        background-color: rgb(100, 100, 100);
     }
     .content_bar input,.content_bar button{
         border: none;
@@ -1123,6 +1124,7 @@
         border-radius: 12px;
         font-size: 1.1vw;
         transition: all 0.4s;
+        color: rgb(0, 0, 0);
     }
     .content_bar > div:hover{
         color:#000;

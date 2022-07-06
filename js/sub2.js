@@ -81,84 +81,60 @@ function sortingAll(){
 }
 
 // 필터링
-function filterinit(){
-    var f_list;
-    var f_class;
+filterbox.onclick = function(e){
+    var f_list = document.querySelectorAll('.sorter');
     var i;
-    filterbox.onclick = function(e){
-        f_list = document.querySelectorAll('.sorter');
-        f_class = filterbox.getElementsByTagName('li');
-        for(i=0;i<=f_list.length;i++){
-            if(e.target.value == 11000 && f_list[i].value < e.target.value){
-                // e.target.classList.add('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'none';
-                f_list[i].style.display = 'flex';
-            } else if(e.target.value == 22000 && f_list[i].value < e.target.value){
-                // e.target.classList.add('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'none';
-                f_list[i].style.display = 'flex';
-            } else if(e.target.value == 33000 && f_list[i].value < e.target.value){
-                // e.target.classList.add('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'none';
-                f_list[i].style.display = 'flex';
-            } else if(e.target.value == 15000 && f_list[i].value >= e.target.value){
-                // e.target.classList.add('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'none';
-                f_list[i].style.display = 'flex';
-            } else if(e.target.id == 'free' || e.target.id == 'sale'){
-                // e.target.classList.add('on');
-                // f_class[i].classList.remove('on');
-                f_list[i].style.display = 'none';
-                hidden.style.display = 'block';
-            } else {
-                f_list[i].style.display = 'none';
-                hidden.style.display = 'none';
-            }
-        }
-    }
-    filterbox2.onclick = function(e){
-        f_list = document.querySelectorAll('.sorter');
-        f_class = filterbox2.getElementsByTagName('li');
-        for(i=0;i<=f_list.length;i++){
-            if(e.target.id == 'game'){
-                // e.target.classList.toggle('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'none';
-                f_list[i].style.display = 'flex';
-            } else if(e.target.id=='book' || e.target.id=='vid' || e.target.id=='sound'){
-                // e.target.classList.toggle('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'block';
-                f_list[i].style.display = 'none';
-            } else {
-                hidden.style.display = 'block';
-                f_list[i].style.display = 'none';
-            }
-        }
-    }
-    filterbox3.onclick = function(e){
-        f_list = document.querySelectorAll('.sorter');
-        f_class = filterbox3.getElementsByTagName('li');
-        for(i=0;i<=f_list.length;i++){
-            if(e.target.id == 'win'){
-                // e.target.classList.toggle('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'none';
-                f_list[i].style.display = 'flex';
-            } else if(e.target.id == 'mac'){
-                // e.target.classList.toggle('on');
-                // f_class[i].classList.remove('on');
-                hidden.style.display = 'block';
-                f_list[i].style.display = 'none';
-            } else{
-                hidden.style.display = 'block';
-                f_list[i].style.display = 'none';
-            }
-        }
-    }
-}
-filterinit();
+     for(i=0;i<f_list.length;i++){
+         if(e.target.value == 11000 && f_list[i].value < e.target.value){
+             hidden.style.display = 'none';
+             f_list[i].style.display = 'flex';
+         } else if(e.target.value == 22000 && f_list[i].value < e.target.value){
+             hidden.style.display = 'none';
+             f_list[i].style.display = 'flex';
+         } else if(e.target.value == 33000 && f_list[i].value < e.target.value){
+             hidden.style.display = 'none';
+             f_list[i].style.display = 'flex';
+         } else if(e.target.value == 15000 && f_list[i].value >= e.target.value){
+             hidden.style.display = 'none';
+             f_list[i].style.display = 'flex';
+         } else if(e.target.id == 'free' || e.target.id == 'sale'){
+             f_list[i].style.display = 'none';
+             hidden.style.display = 'block';
+         } else {
+             f_list[i].style.display = 'none';
+             hidden.style.display = 'none';
+         }
+     }
+ }
+ filterbox2.onclick = function(e){
+    var f_list = document.querySelectorAll('.sorter');
+    var i;
+     for(i=0;i<f_list.length;i++){
+         if(e.target.id == 'game'){
+             hidden.style.display = 'none';
+             f_list[i].style.display = 'flex';
+         } else if(e.target.id=='book' || e.target.id=='vid' || e.target.id=='sound'){
+             hidden.style.display = 'block';
+             f_list[i].style.display = 'none';
+         } else {
+             hidden.style.display = 'block';
+             f_list[i].style.display = 'none';
+         }
+     }
+ }
+ filterbox3.onclick = function(e){
+    var f_list = document.querySelectorAll('.sorter');
+    var i;
+     for(i=0;i<f_list.length;i++){
+         if(e.target.id == 'win'){
+             hidden.style.display = 'none';
+             f_list[i].style.display = 'flex';
+         } else if(e.target.id == 'mac'){
+             hidden.style.display = 'block';
+             f_list[i].style.display = 'none';
+         } else{
+             hidden.style.display = 'block';
+             f_list[i].style.display = 'none';
+         }
+     }
+ }
