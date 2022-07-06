@@ -69,6 +69,14 @@ function clickpage(){
         $('.cnt').eq(ii).show();
         $('.cnt').eq(ii).siblings('.cnt').hide();
     })
+    $('.achive_btn').click(function(){
+        $('.no1 span:last').click();
+        $(window).scrollTop(0);
+    })
+    $('.add_btn').click(function(){
+        $('.no1 span:nth-child(2)').click();
+        $(window).scrollTop(0);
+    })
 }
 
 // 필터링
@@ -84,7 +92,6 @@ function filltering(){
         })
     });
     }
-
 
 // 게임소개 펼치기/접기
 function toggleUpDown(){
