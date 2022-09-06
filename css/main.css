@@ -259,6 +259,9 @@
         overflow: hidden;
         border-radius: 10px;
     }
+    .news_main .main_item .main_txt{
+        padding-left: 10px;
+    }
     .news_main .main_item a:hover{
         text-decoration: underline;
     }
